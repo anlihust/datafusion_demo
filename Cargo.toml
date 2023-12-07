@@ -1,0 +1,22 @@
+[package]
+edition = "2021"
+name = "datafusion_demo"
+version = "0.1.0"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+datafusion = "33"
+tokio = {version = "1", features = ["full"]}
+#datafusion = "32"
+arrow = {version = "48", features = ["ipc", "prettyprint", "rand", "json"]}
+arrow-ord = "48.0.0"
+arrow-schema = {version = "48"}
+parquet = {version = "48", features = ["async"]}
+#arrow = {path = "../../../../github.com/arrow-rs/arrow", features = ["ipc", "prettyprint", "rand", "json"]}
+#arrow-ord = {path = "../../../../github.com/arrow-rs/arrow-ord"}
+#arrow-schema = {path = "../../../../github.com/arrow-rs/arrow-schema"}
+#parquet = {path = "../../../../github.com/arrow-rs/parquet", features = ["async"]}
+clap = "4.0"
+futures-util = "0.3"
+walkdir = "2.4.0"
